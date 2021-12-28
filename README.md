@@ -14,8 +14,10 @@ We will consider the top 10 stocks from the Senator's portfolio using a specific
 ### Objective
 To create a portfolio that balances the conflicting variables of risk and profit appropriately given differing criteria. 
 Given a set of assets and a budget, the goal is to select the amount of money to allocate to each asset such that:
-  a. The expected income of the selected portfolio is equal to some predefined value; and
-  b. The goal is to minimize the risk, which is given by the covariance (risk) of the portfolio.
+
+a. The expected income of the selected portfolio is equal to some predefined value; and
+  
+b. The goal is to minimize the risk, which is given by the covariance (risk) of the portfolio.
   
 We are trying to allocate money into stocks in order to maximize the return while accounting for a risk tolerance - but we can’t optimize two conflicting quantities (profit and risk) at once. Instead, we will take a more piecewise approach - where for each given risk tolerance ceiling (the max amount of risk we are willing to take on), we will try to maximize profit for that given risk level. So we will calculate one optimal mix of allocation of stocks that maximizes profit for each risk level. 
 
